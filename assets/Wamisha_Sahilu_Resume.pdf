@@ -1,0 +1,51 @@
+%PDF-1.4
+1 0 obj
+<< /Title (Wamisha Sahilu - Portfolio & Resume) /Author (Wamisha Sahilu) >>
+endobj
+2 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 6 0 R >> >> >>
+endobj
+5 0 obj
+<< /Length 280 >>
+stream
+BT
+/F1 24 Tf
+50 720 Td
+(Wamisha Sahilu) Tj
+/F1 14 Tf
+0 -30 Td
+(CSE Student & Software Developer) Tj
+0 -25 Td
+(Email: wmsm16@gmail.com | Telegram: t.me/WMlessons | Phone: 0916997180) Tj
+0 -40 Td
+(Experience: 6+ Months Intensive Full-Stack Web Development) Tj
+0 -40 Td
+(Skills: Python, React, Node.js, Express, PostgreSQL, MongoDB, HTML5, CSS3) Tj
+0 -40 Td
+(Projects: Framecraft Studio, Task Management App, Gym Management System) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00067 n 
+0000000092 00042 n 
+0000000144 00057 n 
+0000000211 00014 n 
+0000000335 00033 n 
+0000000667 00068 n 
+trailer
+<< /Size 7 /Root 2 0 R >>
+startxref
+756
+%%EOF
