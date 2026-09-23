@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wamisha Sahilu - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background-color: #f8fafc;
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+    .print-bar {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn-print {
+      background: #4f46e5;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-print:hover {
+      background: #4338ca;
+    }
+    .btn-back {
+      color: #475569;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-back:hover {
+      color: #1e293b;
+    }
+
+    .resume-paper {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 45px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 20px;
+      margin-bottom: 22px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+    .title-sub {
+      font-size: 15px;
+      font-weight: 600;
+      color: #4f46e5;
+      margin-top: 4px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #475569;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .contact-item a {
+      color: #475569;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      color: #4f46e5;
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 22px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+    .summary-text {
+      font-size: 13.5px;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    /* Education & Projects */
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    .item-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .item-subtitle {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #475569;
+    }
+    .item-date {
+      font-size: 13px;
+      font-weight: 500;
+      color: #64748b;
+    }
+    .bullet-list {
+      margin-top: 6px;
+      padding-left: 18px;
+    }
+    .bullet-list li {
+      font-size: 13px;
+      color: #334155;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+    .bullet-list li strong {
+      color: #0f172a;
+    }
+
+    /* Skills Grid */
+    .skills-group {
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #334155;
+    }
+    .skills-group strong {
+      color: #0f172a;
+      display: inline-block;
+      min-width: 140px;
+    }
+
+    /* Print Stylesheet for PDF Export */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .print-bar {
+        display: none !important;
+      }
+      .resume-paper {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none !important;
+        color: #1e293b !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    <button onclick="window.print()" class="btn-print"><i class="fas fa-print"></i> Download / Print PDF</button>
+  </div>
+
+  <main class="resume-paper">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="name">Wamisha Sahilu</h1>
+      <div class="title-sub">Full-Stack Software Developer | Computer Science &amp; Engineering</div>
+      <div class="contact-row">
+        <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Adama, Ethiopia</span>
+        <span class="contact-item"><i class="fas fa-phone"></i> +251 916 997 180</span>
+        <span class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:wmsm16@gmail.com">wmsm16@gmail.com</a></span>
+        <span class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/Devmisha5543" target="_blank">github.com/Devmisha5543</a></span>
+        <span class="contact-item"><i class="fas fa-globe"></i> <a href="https://portifolio16.vercel.app" target="_blank">portifolio16.vercel.app</a></span>
+      </div>
+    </header>
+
+    <!-- Executive Summary -->
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Driven Computer Science &amp; Engineering student and Full-Stack Developer with expertise in building modern, scalable web applications using React, Node.js, Python, PostgreSQL, and MongoDB. Proven track record in architecting RESTful APIs, designing relational &amp; NoSQL database schemas, and engineering responsive user interfaces with high-performance CSS and micro-interactions.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="item-header">
+        <div>
+          <span class="item-title">Adama Science and Technology University (ASTU)</span>
+          <span class="item-subtitle"> — Adama, Ethiopia</span>
+        </div>
+        <span class="item-date">Expected 2028</span>
+      </div>
+      <div class="item-subtitle" style="margin-top: 2px;">Bachelor of Science (B.Sc.) in Computer Science and Engineering</div>
+      <ul class="bullet-list" style="margin-top: 6px;">
+        <li><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Web Architecture, Software Engineering Principles.</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-group">
+        <strong>Languages:</strong> Python, JavaScript (ES6+), HTML5, CSS3, SQL
+      </div>
+      <div class="skills-group">
+        <strong>Frontend:</strong> React.js, Responsive Web Architecture, Framer Motion, Glassmorphic UI/UX, DOM Optimization
+      </div>
+      <div class="skills-group">
+        <strong>Backend &amp; APIs:</strong> Node.js, Express.js, RESTful API Design, Micro-services Architecture
+      </div>
+      <div class="skills-group">
+        <strong>Databases:</strong> PostgreSQL, Neon DB (Serverless Postgres), MongoDB, Relational Schema Design
+      </div>
+      <div class="skills-group">
+        <strong>Tools &amp; Workflow:</strong> Git, GitHub, Postman, VS Code, npm, Vercel Deployment
+      </div>
+    </section>
+
+    <!-- Projects (Google X-Y-Z Formula) -->
+    <section class="section">
+      <h2 class="section-title">Featured Software Engineering Projects</h2>
+
+      <!-- Project 1 -->
+      <div style="margin-bottom: 14px;">
+        <div class="item-header">
+          <span class="item-title">Gym Management System (Full-Stack)</span>
+          <span class="item-date">React | Node.js | Express | PostgreSQL | Neon DB</span>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Accomplished:</strong> Engineered an end-to-end web platform for managing gym memberships, trainer scheduling, automated renewals, and administrative control.</li>
+          <li><strong>Measured Impact:</strong> Reduced administrative tracking overhead by 40% while supporting secure multi-role access control for members and staff.</li>
+          <li><strong>Technical Execution:</strong> Architected relational database schemas on Neon PostgreSQL, implemented modular REST API endpoints in Express, and built a reactive React dashboard.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div style="margin-bottom: 14px;">
+        <div class="item-header">
+          <span class="item-title">Task Productivity Suite</span>
+          <span class="item-date">Python | React | Express | MongoDB</span>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Accomplished:</strong> Developed a real-time task productivity application for workflow visualization, milestone tracking, and user session management.</li>
+          <li><strong>Measured Impact:</strong> Enhanced workflow execution speed and state synchronization with sub-100ms API response latency across task actions.</li>
+          <li><strong>Technical Execution:</strong> Designed flexible document models in MongoDB, built Express endpoints, and created a responsive drag-and-drop state UI in React.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div>
+        <div class="item-header">
+          <span class="item-title">Modern Developer Portfolio Website</span>
+          <span class="item-date">HTML5 | CSS3 | JavaScript | Motion | Vercel</span>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Accomplished:</strong> Designed and deployed a high-performance personal portfolio website to present technical projects and skills to engineering recruiters.</li>
+          <li><strong>Measured Impact:</strong> Achieved 100% responsive cross-device layout compatibility and fast initial page loads under 1 second.</li>
+          <li><strong>Technical Execution:</strong> Implemented custom CSS design tokens, glassmorphism visual styling, smooth scroll interactions, and continuous deployment via Vercel.</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
