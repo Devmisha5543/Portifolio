@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-/* Custom Local Font from Font Folder */
 @font-face {
   font-family: 'RovairLekosty';
   src: url('Font/RovairLekostyDEMO-Bold.ttf') format('truetype'),
@@ -21,14 +20,12 @@
 }
 
 :root {
-  /* User Custom Palette */
   --floral-white:    #fffcf2;
   --dust-grey:       #ccc5b9;
   --charcoal-brown:  #403d39;
   --carbon-black:    #252422;
   --spicy-paprika:   #eb5e28;
 
-  /* Typography */
   --font-body:       'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display:    'Space Grotesk', sans-serif;
   --font-name:       'RovairLekosty', 'Space Grotesk', sans-serif;
@@ -75,7 +72,7 @@ body {
   color: var(--floral-white);
 }
 
-/* Container Utility */
+
 main > section > div,
 header > nav,
 footer > div {
@@ -286,7 +283,7 @@ section#hero {
 }
 
 
-/* Center Portrait — Wider & B&W Monochrome Blend */
+
 .hero-center {
   display: flex;
   flex-direction: column;
@@ -325,7 +322,7 @@ section#hero {
   display: none !important;
 }
 
-/* Sliding Tech Logos Marquee Ticker — Boundary-Free & Monochrome */
+
 .hero-tech-marquee {
   width: 360px;
   max-width: 100%;
@@ -428,7 +425,7 @@ section#hero {
 }
 
 
-/* Download Portfolio / Resume CTA Button */
+
 .hero-download {
   margin-top: 2.25rem;
   position: relative;
@@ -518,7 +515,7 @@ p {
   text-align: center;
 }
 
-/* Executive About Section Layout */
+
 .about-container {
   max-width: 1050px;
   margin: 0 auto;
@@ -683,9 +680,6 @@ p {
 }
 
 
-/* ==============================================
-   OVERLAPPING GLASSMORPHISM CARDS (FEATURED PROJECTS)
-   ============================================== */
 .container {
   position: relative;
   display: flex;
@@ -865,9 +859,7 @@ p {
 }
 
 
-/* ==============================================
-   INTERACTIVE HIGH-VIBE GET IN TOUCH SUITE
-   ============================================== */
+
 .contact-status-banner {
   display: inline-flex;
   align-items: center;
@@ -981,7 +973,7 @@ p {
   text-decoration: underline;
 }
 
-/* Contact Message Form */
+
 .contact-form-card {
   background-color: var(--floral-white);
   border: 1px solid var(--dust-grey);
@@ -1072,9 +1064,7 @@ p {
   }
 }
 
-/* ==============================================
-   HIGH-END MOTION ANIMATED FOOTER
-   ============================================== */
+
 footer.site-footer {
   background-color: var(--carbon-black);
   color: var(--floral-white);
@@ -1089,7 +1079,7 @@ footer.site-footer {
   padding: 0 1.5rem;
 }
 
-/* Footer CTA Banner */
+
 .footer-cta-banner {
   background: linear-gradient(135deg, rgba(64, 61, 57, 0.4) 0%, rgba(37, 36, 34, 0.9) 100%);
   border: 1px solid var(--charcoal-brown);
@@ -1170,7 +1160,7 @@ footer.site-footer {
   border-color: var(--dust-grey);
 }
 
-/* Footer Grid Columns */
+
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -1239,7 +1229,7 @@ footer.site-footer {
   color: var(--spicy-paprika);
 }
 
-/* Footer Bottom Bar */
+
 .footer-bottom {
   display: flex;
   align-items: center;
